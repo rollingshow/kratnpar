@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int k, l, m;
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите три числа k,l,m" << endl;
+	cin >> k >> l >> m;
+	if (k%l == 0)
+		cout << "(" << k << ";" << l << ")" << endl;
+	if (k%m == 0)
+		cout << "(" << k << ";" << m << ")" << endl;
+	if (l%k == 0)
+		cout << "(" << l << ";" << k << ")" << endl;
+	if (l%m == 0)
+		cout << "(" << l << ";" << m << ")" << endl;
+	if (m%k == 0)
+		cout << "(" << m << ";" << k << ")" << endl;
+	if (m%l == 0)
+		cout << "(" << m << ";" << l << ")" << endl;
+	return 0;
+}
